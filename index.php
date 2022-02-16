@@ -1,5 +1,3 @@
 <?php
-echo('hello world');
+echo('hello world !');
 
-
-php -s localhost:7531
