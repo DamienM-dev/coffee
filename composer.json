@@ -11,5 +11,7 @@
             "email": "84769945+DamienM-dev@users.noreply.github.com"
         }
     ],
-    "require": {}
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
 }
