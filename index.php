@@ -29,15 +29,10 @@ foreach ($req as $dbreq) {
 }
 
 
-function waiters(){
-    global $db;
-    $req = $db->query('SELECT id, name FROM waiter');
-    $waiters = $req->fetchAll();
-    return $waiters;
+
+$base = $db->query('SELECT name, price FROM edible');
+
+foreach ($base as $dbbase) {
+    echo $dbbase['name'] . ' ' . $dbbase['price'] . ' €' . "<br>";
 }
 
-$waiters = waiters();
-
-foreach($waiters as $waiter){
-    echo ($waiter['name']).PHP_EOL;
-}
