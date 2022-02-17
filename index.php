@@ -29,10 +29,17 @@ foreach ($req as $dbreq) {
 }
 
 
+//affichage café 1.3
 
-$base = $db->query('SELECT name, price FROM edible');
+?>
+<h3>Cafés</h3>
+<?php
+
+$base = $db->query('SELECT name, price FROM edible WHERE FORMAT(price,1) = "1.3" ');
 
 foreach ($base as $dbbase) {
-    echo $dbbase['name'] . ' ' . $dbbase['price'] . ' €' . "<br>";
+
+        echo $dbbase['name'] . ' ' . $dbbase['price'] . ' €' . "<br>";
+
 }
 
