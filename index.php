@@ -28,8 +28,6 @@ foreach ($req as $dbreq) {
   echo $dbreq['name'] . "<br>";
 }
 
-var_dump($db);
-
 
 function waiters(){
     global $db;
